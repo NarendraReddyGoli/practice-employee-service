@@ -20,6 +20,7 @@ public class WebClientConfig {
 		return WebClient.builder().baseUrl("http://department-service").filter(filter).build();
 	}
 
+	@SuppressWarnings("removal")
 	@Bean
 	DepartmentClient deptClient() {
 		HttpServiceProxyFactory proxyFactory = HttpServiceProxyFactory
